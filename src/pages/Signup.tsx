@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { User, Mail, Lock, UserPlus, Loader2, AlertCircle, CheckCircle } from 'lucide-react';
 import api from '../api/api';
+import { API_BASE_URL } from '../config';
 
 const Signup: React.FC = () => {
     const [name, setName] = useState('');
@@ -38,7 +39,8 @@ const Signup: React.FC = () => {
                     errorMessage = err.response.data.detail;
                 }
             } else if (err.request) {
-                errorMessage = 'No response from server. Is the backend running at http://localhost:8000?';
+                const host = API_BASE_URL || 'http://localhost:8000';
+                errorMessage = `No response from server. Is the backend available at ${host}?`;
             } else {
                 errorMessage = err.message;
             }
