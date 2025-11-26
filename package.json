@@ -37,10 +37,6 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7"
-  ,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dhaked1/Medlister.git"
-  }
-}
+  },
+  "repository": "https://github.com/Dhaked1/Medlister.git"
 }
