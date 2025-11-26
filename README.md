@@ -130,6 +130,28 @@ Using FastAPI in backend to link with Firebase database.
 - `DELETE /patients/delete/{id}` - Delete patient
 
 ## 🎨 User Interface
+## 🔐 Cross-origin (CORS) notes for GitHub Pages
+
+When your frontend is deployed on GitHub Pages (https://<your-user>.github.io/<repo>), browser requests to your API run from a different origin than localhost. If the backend does not allow CORS for the Pages origin, requests will fail with no response.
+
+Make sure your backend allows cross-origin requests from your frontend origin. Example for a FastAPI backend:
+
+```python
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+app.add_middleware(CORSMiddleware,
+   allow_origins=["https://Dhaked1.github.io", "http://localhost:5173"],
+   allow_credentials=True,
+   allow_methods=["*"],
+   allow_headers=["*"],
+)
+```
+
+If you prefer wide allowance during testing, you can use `allow_origins=["*"]` but that is not recommended for production.
+
 
 ### Main Features
 

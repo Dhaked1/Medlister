@@ -37,7 +37,13 @@ const Login: React.FC = () => {
                 }
             } else if (err.request) {
                 const host = API_BASE_URL || 'http://localhost:8000';
-                errorMessage = `No response from server. Is the backend available at ${host}?`;
+                const origin = typeof window !== 'undefined' ? window.location.origin : '';
+                // If frontend and API are on different origins, most likely a CORS issue in production
+                if (host && origin && new URL(host).origin !== origin) {
+                    errorMessage = `No response from server at ${host}. This can happen if your backend blocks cross-origin requests (CORS). Ensure the backend allows requests from ${origin} or set the correct VITE_API_BASE_URL during build.`;
+                } else {
+                    errorMessage = `No response from server. Is the backend available at ${host}?`;
+                }
             } else {
                 errorMessage = err.message;
             }
