@@ -39,7 +39,7 @@ Docs of API for testing: [API Docs](https://meditrack-backend-murex.vercel.app/d
 - **Frontend Deployment**: GitHub Pages
 - **Backend Deployment**: Vercel
 - **Package Manager**: npm
-k
+
 ## 📁 Project Structure
 
 ```
