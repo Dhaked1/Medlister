@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/Meditrack_Frontend/">
+    <script>
+      // Preserve path for client-side routing on GitHub Pages
+      (function() {
+        var redirectBase = '/Meditrack_Frontend/';
+        var path = location.pathname.replace(/^\/Meditrack_Frontend\//, '');
+        var search = location.search || '';
+        var hash = location.hash || '';
+        if (path && path !== '/') {
+          // Send to index with encoded original path in hash for routers that support it
+          location.replace(redirectBase + '?' + encodeURIComponent(path + search) + hash);
+        } else {
+          location.replace(redirectBase);
+        }
+      })();
+    </script>
+  </head>
+  <body>Redirecting...</body>
+  </html>
+
+
