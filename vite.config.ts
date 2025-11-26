@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   // Set base for GitHub Pages (owner/repo)
-  base: "/Meditrack_Frontend/",
+  base: "/Medlister/",
 })

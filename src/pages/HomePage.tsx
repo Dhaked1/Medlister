@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-6 font-sans relative">
       <header className="flex justify-between items-center mb-6">
-        <h1 className="text-4xl font-bold text-gray-800">Meditrack</h1>
+        <h1 className="text-4xl font-bold text-gray-800">Medlister</h1>
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </header>
 

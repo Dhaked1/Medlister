@@ -1,10 +1,10 @@
-# Meditrack Frontend
+# Medlister
 
 A modern, responsive React application for managing patient information with a clean and intuitive user interface. This frontend application provides comprehensive patient management capabilities including adding, viewing, editing, and deleting patient records.
 
 ## 🚀 Live Demo
 
-Visit the live application: [Meditrack Frontend](https://satyam1120k.github.io/Meditrack_Frontend)
+Visit the live application: [Medlister](https://Dhaked1.github.io/Medlister)
 
 Visit the live API: [Meditrack API](https://meditrack-backend-murex.vercel.app)
 
@@ -78,8 +78,8 @@ src/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/samir1120k/Meditrack_Frontend.git
-   cd Meditrack_Frontend
+   git clone https://github.com/Dhaked1/Medlister.git
+   cd Medlister
    ```
 
 2. **Install dependencies**
@@ -135,7 +135,7 @@ Using FastAPI in backend to link with Firebase database.
 
 1. **Header Section**
 
-   - Application title "Meditrack"
+   - Application title "Medlister"
    - Search bar with real-time filtering
 
 2. **Patient Grid**
@@ -395,7 +395,7 @@ The `vite.config.ts` includes:
 
 - React plugin
 - Tailwind CSS plugin
-- GitHub Pages base path configuration (`/Meditrack_Frontend/`)
+ - GitHub Pages base path configuration (`/Medlister/`)
 
 ## 🤝 Contributing
 
@@ -411,9 +411,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Samir**
+**Dhaked1**
 
-- GitHub: [@samir1120k](https://github.com/samir1120k)
+- GitHub: [@Dhaked1](https://github.com/Dhaked1)
 
 ## 🔐 Security Notes
 
