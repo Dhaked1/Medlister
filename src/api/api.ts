@@ -1,7 +1,9 @@
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
 
 const api = axios.create({
-  baseURL: 'https://medlister-backend.vercel.app', // Deployed backend on Vercel
+  // Use the configured API base (build-time or runtime override)
+  baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -13,7 +15,7 @@ api.interceptors.response.use(
   (error) => {
     console.error("API Error:", error);
     if (error.code === "ERR_NETWORK") {
-      console.error("Network Error: Unable to connect to backend at https://medlister-backend.vercel.app");
+      console.error(`Network Error: Unable to connect to backend at ${API_BASE_URL}`);
     }
     return Promise.reject(error);
   }
