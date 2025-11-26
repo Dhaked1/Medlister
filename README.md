@@ -6,9 +6,9 @@ A modern, responsive React application for managing patient information with a c
 
 Visit the live application: [Medlister](https://Dhaked1.github.io/Medlister)
 
-Visit the live API: [Meditrack API](https://meditrack-backend-murex.vercel.app)
+Visit the live API: [Medlister API](https://medlister-backend.vercel.app)
 
-Docs of API for testing: [API Docs](https://meditrack-backend-murex.vercel.app/docs)
+Docs of API for testing: [API Docs](https://medlister-backend.vercel.app/docs)
 
 ## 📋 Features
 
@@ -109,7 +109,7 @@ src/
 
 The application connects to a backend API for patient data management. The API configuration is centralized in `src/config.ts`:
 
-- **Default API URL**: `https://meditrack-backend-murex.vercel.app`
+- **Default API URL**: `https://medlister-backend.vercel.app`
 - **Environment Variable**: `VITE_API_BASE_URL`
 - **Runtime Override**: `window.__API_BASE_URL__`
 

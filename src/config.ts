@@ -8,7 +8,7 @@ const runtimeApiBase: string | undefined = (globalThis as any)?.__API_BASE_URL__
 export const API_BASE_URL: string =
   import.meta?.env?.VITE_API_BASE_URL?.trim() ||
   (runtimeApiBase ? String(runtimeApiBase).trim() : "") ||
-  "https://meditrack-backend-murex.vercel.app";
+  "https://medlister-backend.vercel.app";
 
 export function buildApiUrl(path: string): string {
   const normalizedBase = API_BASE_URL.replace(/\/$/, "");
